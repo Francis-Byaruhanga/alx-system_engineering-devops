@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Ap | sort -k1.1,1.1 -k1.2n -k1.3d | tr '\n' ','; echo
+ls -pA  tr '\n' ',' sort -t',' -k1.1,1.1n -k1.2,1.2  sed 's/,$/\n/'
